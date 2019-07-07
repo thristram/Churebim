@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="closest_beacon_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cHg-OC-Qbf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47r-Zv-sP4">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Jacket Product with Tabs" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-c1-F5H">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1695"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SUN-c1-F5H" firstAttribute="top" secondItem="47r-Zv-sP4" secondAttribute="top" id="FM2-Wh-hUm"/>
+                                    <constraint firstAttribute="bottom" secondItem="SUN-c1-F5H" secondAttribute="bottom" id="FPS-5M-cpA"/>
+                                    <constraint firstAttribute="trailing" secondItem="SUN-c1-F5H" secondAttribute="trailing" id="U3o-WM-ryq"/>
+                                    <constraint firstItem="SUN-c1-F5H" firstAttribute="leading" secondItem="47r-Zv-sP4" secondAttribute="leading" id="eGa-zf-3xg"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cHg-OC-Qbf" secondAttribute="bottom" id="2cL-UR-y1v"/>
+                            <constraint firstItem="47r-Zv-sP4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="2jV-gM-vYR"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="47r-Zv-sP4" secondAttribute="bottom" id="5eS-4u-lIc"/>
+                            <constraint firstItem="47r-Zv-sP4" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="-20" id="DCg-pZ-SOb"/>
+                            <constraint firstAttribute="trailing" secondItem="cHg-OC-Qbf" secondAttribute="trailing" id="GCd-Yi-3ee"/>
+                            <constraint firstItem="cHg-OC-Qbf" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="H3o-uW-cKd"/>
+                            <constraint firstItem="cHg-OC-Qbf" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KuC-VQ-xEA"/>
+                            <constraint firstAttribute="trailing" secondItem="47r-Zv-sP4" secondAttribute="trailing" id="iII-GA-z8y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageview" destination="SUN-c1-F5H" id="3Qs-dj-3Dg"/>
+                        <outlet property="webview" destination="cHg-OC-Qbf" id="jn9-yS-Vc7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="30.134932533733135"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Jacket Product with Tabs" width="375" height="1695"/>
+    </resources>
+</document>
